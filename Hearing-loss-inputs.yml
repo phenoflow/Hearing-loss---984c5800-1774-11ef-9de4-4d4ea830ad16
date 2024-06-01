@@ -138,16 +138,19 @@ inputModule45:
   path: python/external-hearing-loss---primary.py
 inputModule46:
   class: File
-  path: python/referral-hearing-loss---primary.py
+  path: python/hearing-loss-presence---primary.py
 inputModule47:
   class: File
-  path: python/hearing-loss-procedure---primary.py
+  path: python/referral-hearing-loss---primary.py
 inputModule48:
   class: File
-  path: python/hearing-loss-device---primary.py
+  path: python/hearing-loss-procedure---primary.py
 inputModule49:
   class: File
-  path: python/hearing-loss-anomaly---primary.py
+  path: python/hearing-loss-device---primary.py
 inputModule50:
+  class: File
+  path: python/hearing-loss-anomaly---primary.py
+inputModule51:
   class: File
   path: python/output-cases.py
