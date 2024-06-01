@@ -492,8 +492,8 @@ steps:
       potentialCases:
         id: potentialCases
         source: hearing-loss-unspecified---primary/output
-  referral-hearing-loss---primary:
-    run: referral-hearing-loss---primary.cwl
+  hearing-loss-presence---primary:
+    run: hearing-loss-presence---primary.cwl
     out:
     - output
     in:
@@ -503,6 +503,17 @@ steps:
       potentialCases:
         id: potentialCases
         source: external-hearing-loss---primary/output
+  referral-hearing-loss---primary:
+    run: referral-hearing-loss---primary.cwl
+    out:
+    - output
+    in:
+      inputModule:
+        id: inputModule
+        source: inputModule47
+      potentialCases:
+        id: potentialCases
+        source: hearing-loss-presence---primary/output
   hearing-loss-procedure---primary:
     run: hearing-loss-procedure---primary.cwl
     out:
@@ -510,7 +521,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule47
+        source: inputModule48
       potentialCases:
         id: potentialCases
         source: referral-hearing-loss---primary/output
@@ -521,7 +532,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule48
+        source: inputModule49
       potentialCases:
         id: potentialCases
         source: hearing-loss-procedure---primary/output
@@ -532,7 +543,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule49
+        source: inputModule50
       potentialCases:
         id: potentialCases
         source: hearing-loss-device---primary/output
@@ -543,7 +554,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule50
+        source: inputModule51
       potentialCases:
         id: potentialCases
         source: hearing-loss-anomaly---primary/output
@@ -747,6 +758,10 @@ inputs:
     type: File
   inputModule50:
     id: inputModule50
+    doc: Python implementation unit
+    type: File
+  inputModule51:
+    id: inputModule51
     doc: Python implementation unit
     type: File
 outputs:
